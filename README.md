@@ -71,6 +71,9 @@ npm run preview
 
 # Periksa kode
 npm run lint
+
+#menghentikan server
+Stop-Process -Name node -Force
 ```
 
 Server pengembangan berjalan di `http://localhost:5173` secara default.
