@@ -1,0 +1,64 @@
+/* Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* Font dari fontsource */
+@import "@fontsource-variable/fraunces";
+@import "@fontsource-variable/hanken-grotesk";
+
+/* Token desain: palet hangat-elegan (krem, kayu, zaitun) */
+@theme {
+  /* Krem — latar dasar */
+  --color-cream-50: #faf6ee;
+  --color-cream-100: #f2ebdc;
+  --color-cream-200: #e8dfc8;
+
+  /* Cokelat kayu — identitas utama */
+  --color-wood-500: #8b6b43;
+  --color-wood-700: #5c4327;
+  --color-wood-900: #2e2014;
+
+  /* Hijau zaitun — aksen sekunder */
+  --color-olive-600: #5b6b3a;
+  --color-olive-700: #475428;
+
+  /* Tinta & utility */
+  --color-ink: #1f1812;
+  --color-paper: #faf6ee;
+
+  /* Tipografi */
+  --font-serif: "Fraunces Variable", Georgia, serif;
+  --font-sans: "Hanken Grotesk Variable", system-ui, sans-serif;
+}
+
+/* Dasar halaman */
+html {
+  scroll-behavior: auto; /* Lenis yang mengatur smooth scroll */
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream-50);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Seleksi teks */
+::selection {
+  background: var(--color-olive-600);
+  color: var(--color-cream-50);
+}
+
+/* Scrollbar minimal */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-wood-500);
+  border-radius: 4px;
+}
