@@ -57,6 +57,9 @@ rumah-scroll/
 Prasyarat: Node.js 18+ dan npm.
 
 ```bash
+git clone
+git clone https://github.com/bjbghjbv-cpu/FrontendProject.git
+
 # Pasang dependensi
 npm install
 
